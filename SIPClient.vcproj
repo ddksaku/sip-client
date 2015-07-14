@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="8,00"
+	Name="SIPClient"
+	ProjectGUID="{F96E402E-736A-3F9A-AF87-ABB8DD8202B0}"
+	Keyword="Qt4VSv1.0">
+	<Platforms>
+		<Platform
+			Name="Windows Mobile 6 Professional SDK (ARMV4I)"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="1"
+			IntermediateDirectory="debug\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;c:\Qt\QtWinCe\include\QtCore&quot;,&quot;c:\Qt\QtWinCe\include\QtGui&quot;,&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot;,&quot;c:\Qt\QtWinCe\include&quot;,&quot;.&quot;,&quot;src&quot;,&quot;src\logging&quot;,&quot;src\voip&quot;,&quot;\pjsip\include&quot;,&quot;\pjnath\include&quot;,&quot;\pjmedia\include&quot;,&quot;\pjlib-util\include&quot;,&quot;\pjlib\include&quot;,&quot;\include&quot;,&quot;c:\Qt\QtWinCe\include\ActiveQt&quot;,&quot;debug&quot;,&quot;.&quot;,c:\Qt\QtWinCe\mkspecs\default"
+				AdditionalOptions="-Zm200 -w34100 -w34189 -w34100 -w34189"
+				AssemblerListingLocation="debug\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="3"
+				ExceptionHandling="0"
+				GeneratePreprocessedFile="0"
+				ObjectFile="debug\"
+				Optimization ="4"
+				PreprocessorDefinitions="DEBUG,_DEBUG,DEBUG,_DEBUG,_WINDOWS,UNDER_CE,WINCE,_WINDOWS,_UNICODE,UNICODE,_WIN32,QT_NO_PRINTER,QT_NO_PRINTDIALOG,ARMV4I,_ARMV4I_,armv4i,_ARM_,ARM,_M_ARM,ARM,__arm__,Q_OS_WINCE_WM,QT_NO_PRINTER,QT_NO_PRINTDIALOG,_WIN32_WCE=0x502,QT_DLL,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_THREAD_SUPPORT"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="3"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				WarningLevel="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="corelibc.lib c:\Qt\QtWinCe\lib\qtmaind.lib ./lib/wincewm60\pjsua.lib ./lib/wincewm60\pjsip.lib ./lib/wincewm60\pjnath.lib ./lib/wincewm60\pjmedia.lib ./lib/wincewm60\pjsip-ua.lib ./lib/wincewm60\pjsip-simple.lib ./lib/wincewm60\pjsip-ua.lib ./lib/wincewm60\pjmedia-codec.lib ./lib/wincewm60\pjlib-util.lib ./lib/wincewm60\pj.lib ./lib/wincewm60\libportaudio.lib ./lib/wincewm60\libresample.lib ./lib/wincewm60\libspeex.lib ./lib/wincewm60\libsrtp.lib ./lib/wincewm60\libgsmcodec.lib ./lib/wincewm60\libilbccodec.lib ./lib/wincewm60\libmilenage.lib ./lib/wincewm60\libGLES_CM.lib commctrl.lib coredll.lib winsock.lib ws2.lib c:\Qt\QtWinCe\lib\QtOpenGLd4.lib c:\Qt\QtWinCe\lib\QtGuid4.lib c:\Qt\QtWinCe\lib\QtCored4.lib"
+				AdditionalLibraryDirectories="c:\Qt\QtWinCe\lib,./lib/wincewm60,\bin\arm\Release"
+				AdditionalOptions="/SUBSYSTEM:WINDOWSCE,5.02 /MACHINE:THUMB /SUBSYSTEM:WINDOWSCE,5.02 /MACHINE:THUMB"
+				GenerateDebugInformation="true"
+				IgnoreDefaultLibraryNames="OLDNAMES.LIB"
+				IgnoreImportLibrary="true"
+				LinkTimeCodeGeneration="0"
+				OutputFile="debug\SIPClient.exe"
+				ProgramDatabaseFile=""
+				SubSystem="0"
+				SuppressStartupBanner="true"/>
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="DEBUG,_DEBUG,DEBUG,_DEBUG,_WINDOWS,UNDER_CE,WINCE,_WINDOWS,_UNICODE,UNICODE,_WIN32,QT_NO_PRINTER,QT_NO_PRINTDIALOG,ARMV4I,_ARMV4I_,armv4i,_ARM_,ARM,_M_ARM,ARM,__arm__,Q_OS_WINCE_WM,QT_NO_PRINTER,QT_NO_PRINTDIALOG,_WIN32_WCE=0x502,QT_DLL,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_THREAD_SUPPORT,_DEBUG"/>
+			<DeploymentTool
+				RegisterOutput="0"
+				AdditionalFiles="QtOpenGLd4.dll|C:\Qt\QtWinCe\lib|%CSIDL_PROGRAM_FILES%\SIPClient|0;QtGuid4.dll|C:\Qt\QtWinCe\lib|%CSIDL_PROGRAM_FILES%\SIPClient|0;QtCored4.dll|C:\Qt\QtWinCe\lib|%CSIDL_PROGRAM_FILES%\SIPClient|0;msvcr80d.dll|C:\Program Files\Microsoft Visual Studio 8\VC\ce\dll\ARMV4I|%CSIDL_PROGRAM_FILES%\SIPClient|0;"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="1"
+			IntermediateDirectory="release\"
+			UseOfMfc="0"
+			WholeProgramOptimization="true">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;c:\Qt\QtWinCe\include\QtCore&quot;,&quot;c:\Qt\QtWinCe\include\QtGui&quot;,&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot;,&quot;c:\Qt\QtWinCe\include&quot;,&quot;.&quot;,&quot;src&quot;,&quot;src\logging&quot;,&quot;src\voip&quot;,&quot;\pjsip\include&quot;,&quot;\pjnath\include&quot;,&quot;\pjmedia\include&quot;,&quot;\pjlib-util\include&quot;,&quot;\pjlib\include&quot;,&quot;\include&quot;,&quot;c:\Qt\QtWinCe\include\ActiveQt&quot;,&quot;release&quot;,&quot;.&quot;,c:\Qt\QtWinCe\mkspecs\default"
+				AdditionalOptions="-Zm200 -w34100 -w34189 -w34100 -w34189"
+				AssemblerListingLocation="release\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="0"
+				ExceptionHandling="0"
+				GeneratePreprocessedFile="0"
+				ObjectFile="release\"
+				Optimization ="2"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNDER_CE,WINCE,_WINDOWS,_UNICODE,UNICODE,_WIN32,QT_NO_PRINTER,QT_NO_PRINTDIALOG,ARMV4I,_ARMV4I_,armv4i,_ARM_,ARM,_M_ARM,ARM,__arm__,Q_OS_WINCE_WM,QT_NO_PRINTER,QT_NO_PRINTDIALOG,_WIN32_WCE=0x502,QT_DLL,QT_NO_DEBUG,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_THREAD_SUPPORT,NDEBUG"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="2"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				WarningLevel="3"
+				WholeProgramOptimization="true"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="corelibc.lib c:\Qt\QtWinCe\lib\qtmain.lib ./lib/wincewm60\pjsua.lib ./lib/wincewm60\pjsip.lib ./lib/wincewm60\pjnath.lib ./lib/wincewm60\pjmedia.lib ./lib/wincewm60\pjsip-ua.lib ./lib/wincewm60\pjsip-simple.lib ./lib/wincewm60\pjsip-ua.lib ./lib/wincewm60\pjmedia-codec.lib ./lib/wincewm60\pjlib-util.lib ./lib/wincewm60\pj.lib ./lib/wincewm60\libportaudio.lib ./lib/wincewm60\libresample.lib ./lib/wincewm60\libspeex.lib ./lib/wincewm60\libsrtp.lib ./lib/wincewm60\libgsmcodec.lib ./lib/wincewm60\libilbccodec.lib ./lib/wincewm60\libmilenage.lib ./lib/wincewm60\libGLES_CM.lib commctrl.lib coredll.lib winsock.lib ws2.lib c:\Qt\QtWinCe\lib\QtOpenGL4.lib c:\Qt\QtWinCe\lib\QtGui4.lib c:\Qt\QtWinCe\lib\QtCore4.lib"
+				AdditionalLibraryDirectories="c:\Qt\QtWinCe\lib,./lib/wincewm60,\bin\arm\Release"
+				AdditionalOptions="/SUBSYSTEM:WINDOWSCE,5.02 /MACHINE:THUMB /SUBSYSTEM:WINDOWSCE,5.02 /MACHINE:THUMB"
+				GenerateDebugInformation="false"
+				IgnoreDefaultLibraryNames="OLDNAMES.LIB"
+				IgnoreImportLibrary="true"
+				LinkIncremental="1"
+				LinkTimeCodeGeneration="1"
+				OutputFile="release\SIPClient.exe"
+				ProgramDatabaseFile=""
+				SubSystem="0"
+				SuppressStartupBanner="true"/>
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNDER_CE,WINCE,_WINDOWS,_UNICODE,UNICODE,_WIN32,QT_NO_PRINTER,QT_NO_PRINTDIALOG,ARMV4I,_ARMV4I_,armv4i,_ARM_,ARM,_M_ARM,ARM,__arm__,Q_OS_WINCE_WM,QT_NO_PRINTER,QT_NO_PRINTDIALOG,_WIN32_WCE=0x502,QT_DLL,QT_NO_DEBUG,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_THREAD_SUPPORT"/>
+			<DeploymentTool
+				RegisterOutput="0"
+				AdditionalFiles="QtOpenGL4.dll|C:\Qt\QtWinCe\lib|%CSIDL_PROGRAM_FILES%\SIPClient|0;QtGui4.dll|C:\Qt\QtWinCe\lib|%CSIDL_PROGRAM_FILES%\SIPClient|0;QtCore4.dll|C:\Qt\QtWinCe\lib|%CSIDL_PROGRAM_FILES%\SIPClient|0;msvcr80.dll|C:\Program Files\Microsoft Visual Studio 8\VC\ce\dll\ARMV4I|%CSIDL_PROGRAM_FILES%\SIPClient|0;"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath="src\AccountDialog.cpp"/>
+			<File
+				RelativePath="src\DialPad.cpp"/>
+			<File
+				RelativePath="src\DialerWidget.cpp"/>
+			<File
+				RelativePath="src\GLWidget.cpp"/>
+			<File
+				RelativePath="src\HistoryModel.cpp"/>
+			<File
+				RelativePath="src\HistoryWidget.cpp"/>
+			<File
+				RelativePath="src\logging\Logger.cpp"/>
+			<File
+				RelativePath="src\MainWindow.cpp"/>
+			<File
+				RelativePath="src\NetworkDialog.cpp"/>
+			<File
+				RelativePath="src\Phone.cpp"/>
+			<File
+				RelativePath="src\ProxyDialog.cpp"/>
+			<File
+				RelativePath="src\voip\SIPAccount.cpp"/>
+			<File
+				RelativePath="src\voip\SIPAccountManager.cpp"/>
+			<File
+				RelativePath="src\voip\SIPCall.cpp"/>
+			<File
+				RelativePath="src\voip\SIPCallManager.cpp"/>
+			<File
+				RelativePath="src\voip\SIPPlayer.cpp"/>
+			<File
+				RelativePath="src\voip\SIPRecorder.cpp"/>
+			<File
+				RelativePath="src\voip\SIPStack.cpp"/>
+			<File
+				RelativePath="src\voip\SIPTransport.cpp"/>
+			<File
+				RelativePath="src\voip\SIPTransportManager.cpp"/>
+			<File
+				RelativePath="src\main.cpp"/>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath="src\AbstractModel.h"/>
+			<File
+				RelativePath="src\Account.h"/>
+			<File
+				RelativePath="src\AccountDialog.h">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\AccountDialog.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\AccountDialog.h -o debug\moc_AccountDialog.cpp"
+						Description="MOC src\AccountDialog.h"
+						Outputs="debug\moc_AccountDialog.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\AccountDialog.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\AccountDialog.h -o release\moc_AccountDialog.cpp"
+						Description="MOC src\AccountDialog.h"
+						Outputs="release\moc_AccountDialog.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\Call.h"/>
+			<File
+				RelativePath="src\DialPad.h">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\DialPad.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\DialPad.h -o debug\moc_DialPad.cpp"
+						Description="MOC src\DialPad.h"
+						Outputs="debug\moc_DialPad.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\DialPad.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\DialPad.h -o release\moc_DialPad.cpp"
+						Description="MOC src\DialPad.h"
+						Outputs="release\moc_DialPad.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\DialerWidget.h">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\DialerWidget.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\DialerWidget.h -o debug\moc_DialerWidget.cpp"
+						Description="MOC src\DialerWidget.h"
+						Outputs="debug\moc_DialerWidget.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\DialerWidget.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\DialerWidget.h -o release\moc_DialerWidget.cpp"
+						Description="MOC src\DialerWidget.h"
+						Outputs="release\moc_DialerWidget.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\ui\Error.h"/>
+			<File
+				RelativePath="src\GLWidget.h"/>
+			<File
+				RelativePath="src\HistoryModel.h">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\HistoryModel.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\HistoryModel.h -o debug\moc_HistoryModel.cpp"
+						Description="MOC src\HistoryModel.h"
+						Outputs="debug\moc_HistoryModel.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\HistoryModel.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\HistoryModel.h -o release\moc_HistoryModel.cpp"
+						Description="MOC src\HistoryModel.h"
+						Outputs="release\moc_HistoryModel.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\HistoryWidget.h">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\HistoryWidget.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\HistoryWidget.h -o debug\moc_HistoryWidget.cpp"
+						Description="MOC src\HistoryWidget.h"
+						Outputs="debug\moc_HistoryWidget.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\HistoryWidget.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\HistoryWidget.h -o release\moc_HistoryWidget.cpp"
+						Description="MOC src\HistoryWidget.h"
+						Outputs="release\moc_HistoryWidget.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\logging\Logger.h"/>
+			<File
+				RelativePath="src\MainWindow.h">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\MainWindow.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\MainWindow.h -o debug\moc_MainWindow.cpp"
+						Description="MOC src\MainWindow.h"
+						Outputs="debug\moc_MainWindow.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\MainWindow.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\MainWindow.h -o release\moc_MainWindow.cpp"
+						Description="MOC src\MainWindow.h"
+						Outputs="release\moc_MainWindow.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\Message.h"/>
+			<File
+				RelativePath="src\Network.h"/>
+			<File
+				RelativePath="src\NetworkDialog.h">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\NetworkDialog.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\NetworkDialog.h -o debug\moc_NetworkDialog.cpp"
+						Description="MOC src\NetworkDialog.h"
+						Outputs="debug\moc_NetworkDialog.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\NetworkDialog.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\NetworkDialog.h -o release\moc_NetworkDialog.cpp"
+						Description="MOC src\NetworkDialog.h"
+						Outputs="release\moc_NetworkDialog.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\Phone.h">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\Phone.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\Phone.h -o debug\moc_Phone.cpp"
+						Description="MOC src\Phone.h"
+						Outputs="debug\moc_Phone.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\Phone.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\Phone.h -o release\moc_Phone.cpp"
+						Description="MOC src\Phone.h"
+						Outputs="release\moc_Phone.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\ProxyDialog.h">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\ProxyDialog.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;debug&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\ProxyDialog.h -o debug\moc_ProxyDialog.cpp"
+						Description="MOC src\ProxyDialog.h"
+						Outputs="debug\moc_ProxyDialog.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\moc.exe;src\ProxyDialog.h"
+						CommandLine="C:\Qt\QtWinCe\bin\moc.exe  -DUNDER_CE -DWINCE -D_WINDOWS -D_UNICODE -DUNICODE -D_WIN32 -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DARMV4I -D_ARMV4I_ -Darmv4i -D_ARM_ -DARM -D_M_ARM -DARM -D__arm__ -DQ_OS_WINCE_WM -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -D_WIN32_WCE=0x502 -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I&quot;c:\Qt\QtWinCe\include\QtCore&quot; -I&quot;c:\Qt\QtWinCe\include\QtGui&quot; -I&quot;c:\Qt\QtWinCe\include\QtOpenGL&quot; -I&quot;c:\Qt\QtWinCe\include&quot; -I&quot;.&quot; -I&quot;src&quot; -I&quot;src\logging&quot; -I&quot;src\voip&quot; -I&quot;\pjsip\include&quot; -I&quot;\pjnath\include&quot; -I&quot;\pjmedia\include&quot; -I&quot;\pjlib-util\include&quot; -I&quot;\pjlib\include&quot; -I&quot;\include&quot; -I&quot;c:\Qt\QtWinCe\include\ActiveQt&quot; -I&quot;release&quot; -I&quot;.&quot; -Ic:\Qt\QtWinCe\mkspecs\default -D_MSC_VER=1400 src\ProxyDialog.h -o release\moc_ProxyDialog.cpp"
+						Description="MOC src\ProxyDialog.h"
+						Outputs="release\moc_ProxyDialog.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\voip\SIPAccount.h"/>
+			<File
+				RelativePath="src\voip\SIPAccountManager.h"/>
+			<File
+				RelativePath="src\voip\SIPCall.h"/>
+			<File
+				RelativePath="src\voip\SIPCallManager.h"/>
+			<File
+				RelativePath="src\voip\SIPConfig.h"/>
+			<File
+				RelativePath="src\voip\SIPPlayer.h"/>
+			<File
+				RelativePath="src\voip\SIPPort.h"/>
+			<File
+				RelativePath="src\voip\SIPRecorder.h"/>
+			<File
+				RelativePath="src\voip\SIPStack.h"/>
+			<File
+				RelativePath="src\voip\SIPStackListener.h"/>
+			<File
+				RelativePath="src\voip\SIPTransport.h"/>
+			<File
+				RelativePath="src\voip\SIPTransportManager.h"/>
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
+			<File
+				RelativePath="debug\moc_AccountDialog.cpp">
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_AccountDialog.cpp">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_DialPad.cpp">
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_DialPad.cpp">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_DialerWidget.cpp">
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_DialerWidget.cpp">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_HistoryModel.cpp">
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_HistoryModel.cpp">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_HistoryWidget.cpp">
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_HistoryWidget.cpp">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_MainWindow.cpp">
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_MainWindow.cpp">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_NetworkDialog.cpp">
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_NetworkDialog.cpp">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_Phone.cpp">
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_Phone.cpp">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\moc_ProxyDialog.cpp">
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\moc_ProxyDialog.cpp">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="debug\qrc_resources.cpp">
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="release\qrc_resources.cpp">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="ui_AccountDialog.h"/>
+			<File
+				RelativePath="ui_DialPad.h"/>
+			<File
+				RelativePath="ui_DialerWidget.h"/>
+			<File
+				RelativePath="ui_HistoryWidget.h"/>
+			<File
+				RelativePath="ui_MainWindow.h"/>
+			<File
+				RelativePath="ui_NetworkDialog.h"/>
+		</Filter>
+		<Filter
+			Name="Form Files"
+			Filter="ui"
+			UniqueIdentifier="{99349809-55BA-4b9d-BF79-8FDBB0286EB3}"
+			ParseFiles="false">
+			<File
+				RelativePath="src\AccountDialog.ui">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\uic.exe;src\AccountDialog.ui"
+						CommandLine="C:\Qt\QtWinCe\bin\uic.exe src\AccountDialog.ui -o ui_AccountDialog.h"
+						Description="UIC src\AccountDialog.ui"
+						Outputs="ui_AccountDialog.h"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\uic.exe;src\AccountDialog.ui"
+						CommandLine="C:\Qt\QtWinCe\bin\uic.exe src\AccountDialog.ui -o ui_AccountDialog.h"
+						Description="UIC src\AccountDialog.ui"
+						Outputs="ui_AccountDialog.h"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\DialPad.ui">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\uic.exe;src\DialPad.ui"
+						CommandLine="C:\Qt\QtWinCe\bin\uic.exe src\DialPad.ui -o ui_DialPad.h"
+						Description="UIC src\DialPad.ui"
+						Outputs="ui_DialPad.h"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\uic.exe;src\DialPad.ui"
+						CommandLine="C:\Qt\QtWinCe\bin\uic.exe src\DialPad.ui -o ui_DialPad.h"
+						Description="UIC src\DialPad.ui"
+						Outputs="ui_DialPad.h"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\DialerWidget.ui">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\uic.exe;src\DialerWidget.ui"
+						CommandLine="C:\Qt\QtWinCe\bin\uic.exe src\DialerWidget.ui -o ui_DialerWidget.h"
+						Description="UIC src\DialerWidget.ui"
+						Outputs="ui_DialerWidget.h"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\uic.exe;src\DialerWidget.ui"
+						CommandLine="C:\Qt\QtWinCe\bin\uic.exe src\DialerWidget.ui -o ui_DialerWidget.h"
+						Description="UIC src\DialerWidget.ui"
+						Outputs="ui_DialerWidget.h"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\HistoryWidget.ui">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\uic.exe;src\HistoryWidget.ui"
+						CommandLine="C:\Qt\QtWinCe\bin\uic.exe src\HistoryWidget.ui -o ui_HistoryWidget.h"
+						Description="UIC src\HistoryWidget.ui"
+						Outputs="ui_HistoryWidget.h"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\uic.exe;src\HistoryWidget.ui"
+						CommandLine="C:\Qt\QtWinCe\bin\uic.exe src\HistoryWidget.ui -o ui_HistoryWidget.h"
+						Description="UIC src\HistoryWidget.ui"
+						Outputs="ui_HistoryWidget.h"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\MainWindow.ui">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\uic.exe;src\MainWindow.ui"
+						CommandLine="C:\Qt\QtWinCe\bin\uic.exe src\MainWindow.ui -o ui_MainWindow.h"
+						Description="UIC src\MainWindow.ui"
+						Outputs="ui_MainWindow.h"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\uic.exe;src\MainWindow.ui"
+						CommandLine="C:\Qt\QtWinCe\bin\uic.exe src\MainWindow.ui -o ui_MainWindow.h"
+						Description="UIC src\MainWindow.ui"
+						Outputs="ui_MainWindow.h"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="src\NetworkDialog.ui">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\uic.exe;src\NetworkDialog.ui"
+						CommandLine="C:\Qt\QtWinCe\bin\uic.exe src\NetworkDialog.ui -o ui_NetworkDialog.h"
+						Description="UIC src\NetworkDialog.ui"
+						Outputs="ui_NetworkDialog.h"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\uic.exe;src\NetworkDialog.ui"
+						CommandLine="C:\Qt\QtWinCe\bin\uic.exe src\NetworkDialog.ui -o ui_NetworkDialog.h"
+						Description="UIC src\NetworkDialog.ui"
+						Outputs="ui_NetworkDialog.h"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="qrc;*"
+			UniqueIdentifier="{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}"
+			ParseFiles="false">
+			<File
+				RelativePath="res\icons\clear.png"/>
+			<File
+				RelativePath="res\icons\exit.png"/>
+			<File
+				RelativePath="res\icons\hangup.png"/>
+			<File
+				RelativePath="res\icons\logs.png"/>
+			<File
+				RelativePath="res\icons\minus.png"/>
+			<File
+				RelativePath="res\icons\offline.png"/>
+			<File
+				RelativePath="res\icons\online.png"/>
+			<File
+				RelativePath="res\icons\play.png"/>
+			<File
+				RelativePath="res\icons\pref_advanced.png"/>
+			<File
+				RelativePath="res\icons\prefs.png"/>
+			<File
+				RelativePath="res\resources.qrc">
+				<FileConfiguration
+					Name="Debug|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\rcc.exe;res\icons\clear.png;res\icons\exit.png;res\icons\hangup.png;res\icons\logs.png;res\icons\minus.png;res\icons\offline.png;res\icons\online.png;res\icons\play.png;res\icons\pref_advanced.png;res\icons\prefs.png;res\icons\screenshot.png;res\icons\sub.png;res\icons\url.png;res\icons\video_size.png;res\resources.qrc"
+						CommandLine="C:\Qt\QtWinCe\bin\rcc.exe -name resources res\resources.qrc -o debug\qrc_resources.cpp"
+						Description="RCC res\resources.qrc"
+						Outputs="debug\qrc_resources.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Windows Mobile 6 Professional SDK (ARMV4I)">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\QtWinCe\bin\rcc.exe;res\icons\clear.png;res\icons\exit.png;res\icons\hangup.png;res\icons\logs.png;res\icons\minus.png;res\icons\offline.png;res\icons\online.png;res\icons\play.png;res\icons\pref_advanced.png;res\icons\prefs.png;res\icons\screenshot.png;res\icons\sub.png;res\icons\url.png;res\icons\video_size.png;res\resources.qrc"
+						CommandLine="C:\Qt\QtWinCe\bin\rcc.exe -name resources res\resources.qrc -o release\qrc_resources.cpp"
+						Description="RCC res\resources.qrc"
+						Outputs="release\qrc_resources.cpp"
+						Path="c:\Qt\QtWinCe\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="res\icons\screenshot.png"/>
+			<File
+				RelativePath="res\icons\sub.png"/>
+			<File
+				RelativePath="res\icons\url.png"/>
+			<File
+				RelativePath="res\icons\video_size.png"/>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

@@ -1,0 +1,5 @@
+# path to pjsip library
+PATH_TO_PJSIP = c:\Development\libs\PJSIP\pjproject-1.0
+
+# path to OpenGL ES library
+PATH_TO_OPENGL_ES = c:\Development\libs\OpenGLES

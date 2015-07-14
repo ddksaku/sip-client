@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="/" >
+    <file>icons/hangup.png</file>
+    <file>icons/screenshot.png</file>
+    <file>icons/online.png</file>
+    <file>icons/offline.png</file>
+    <file>icons/clear.png</file>
+    <file>icons/exit.png</file>
+    <file>icons/logs.png</file>
+    <file>icons/minus.png</file>
+    <file>icons/play.png</file>
+    <file>icons/pref_advanced.png</file>
+    <file>icons/prefs.png</file>
+    <file>icons/sub.png</file>
+    <file>icons/url.png</file>
+    <file>icons/video_size.png</file>
+  </qresource>
+</RCC>
